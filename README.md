@@ -9,7 +9,7 @@ Automatic text summarization is the task of producing a text summary "from one o
 We adapt a recent centroid-based text summarization model, one that takes advantage of the compositionality of word embeddings, in order to obtain a single vector representation of the most meaningful words in a given text. We propose utilizing Latent Dirichlet Allocation (LDA), a probabilistic generative model for collections of discrete data, in order to better obtain the topic words of a document for use in constructing the centroid vector. We see that the LDA implementation results in overall more coherent summaries, suggesting the potential for utilizing topic models to improve upon the general centroid-based method.  
 
 ## Our paper: 
-- View [here](LDA_Centroid_text_summarization.pdf).
+- .pdf of our paper available [here](LDA_Centroid_text_summarization.pdf).
 
 ## This work is based on: 
 - **Centroid-based Text Summarization through Compositionality of Word Embeddings** https://www.aclweb.org/anthology/W17-1003.pdf 
