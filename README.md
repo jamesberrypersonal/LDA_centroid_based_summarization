@@ -1,12 +1,12 @@
 # Improving Centroid-Based Text Summarization through LDA-based Document Centroids
 
-- **Automatic Text Summarization:** The task of producing a text summary "from one or more texts, that conveys important information in the original text(s), and that is no longer than half of the original text(s) and usually, significantly less than that" [*(Radev, Hovy, McKeown, 2002)*](https://www.mitpressjournals.org/doi/pdf/10.1162/089120102762671927).
+- **Automatic Text Summarization:** The task of producing a text summary *"from one or more texts, that conveys important information in the original text(s), and that is no longer than half of the original text(s) and usually, significantly less than that"* [(Radev, Hovy, McKeown, 2002)](https://www.mitpressjournals.org/doi/pdf/10.1162/089120102762671927).
 - We adapt a recent centroid-based text summarization model, one that takes advantage of the compositionality of word embeddings, in order to obtain a single vector representation of the most meaningful words in a given text. We propose utilizing Latent Dirichlet Allocation (LDA), a probabilistic generative model for collections of discrete data, in order to better obtain the topic words of a document for use in constructing the centroid vector. We see that the LDA implementation results in overall more coherent summaries, suggesting the potential for utilizing topic models to improve upon the general centroid-based method.  
 
 ## Our paper
 
 - PDF of final paper available [here](docs/LDA_Centroid_text_summarization.pdf).
-- This project is based on work from the following paper: [*(Rossiello, Semeraro, 2017)*](https://www.aclweb.org/anthology/W17-1003.pdf).
+- This project is based on work from the following paper: [(Rossiello, Semeraro, 2017)](https://www.aclweb.org/anthology/W17-1003.pdf).
   - **Repo of their codebase:** [here](https://github.com/gaetangate/text-summarizer).
 
 ## Data Setup Instructions
