@@ -1,7 +1,7 @@
 # Improving Centroid-Based Text Summarization through LDA-based Document Centroids
 
 - **Automatic Text Summarization** is the task of producing a text summary *"from one or more texts, that conveys important information in the original text(s), and that is no longer than half of the original text(s) and usually, significantly less than that"* [(Radev, Hovy, McKeown, 2002)](https://www.mitpressjournals.org/doi/pdf/10.1162/089120102762671927).
-- This project develops a machine learning model for automatic text summarization by making use of an existing simple model (found [here](https://www.aclweb.org/anthology/W17-1003.pdf)) and modifying it using a pre-trained topic model (a variety of machine learning model for extracting abstract 'topics' occuring in a group of documents - see [(Blei, 2012)](https://www.semanticscholar.org/paper/Probabilistic-topic-models-Blei/7314be5cd836c8f06bd1ecab565b00b65259eac6) for further background) to obtain a more robust model that performs competitively even against much more complex deep learning based models. (For a more detailed technical breakdown, see [here](#technical-breakdown) or our full paper below.)
+- This project develops a machine learning model for automatic text summarization by making use of an existing simple model (found [here](https://www.aclweb.org/anthology/W17-1003.pdf)) and modifying it using a pre-trained topic model (a variety of machine learning model for extracting abstract 'topics' occuring in a group of documents - see [(Blei, 2012)](https://www.semanticscholar.org/paper/Probabilistic-topic-models-Blei/7314be5cd836c8f06bd1ecab565b00b65259eac6) for further background) to obtain a more robust model that performs competitively even against much more complex deep learning based models. (For a more detailed technical breakdown, see [here](#technical-description) or our full paper below.)
 
 ## Our Paper
 
@@ -16,13 +16,13 @@
 
 - Models are avaliable in `src`. Example experiments available in `Evaluate_DUC.ipynb`.
 
-## Technical Breakdown
+## Technical Description
 
-We adapt a recent centroid-based text summarization model [(Rossiello, Semeraro, 2017)](https://www.aclweb.org/anthology/W17-1003.pdf) that takes advantage of the compositionality of word vector embeddings in order to obtain a single vector representation of the most meaningful words in a given text. We propose utilizing Latent Dirichlet Allocation (LDA), a probabilistic generative model for collections of discrete data, as a topic model in order to obtain the most significant words of a document's topic for use in constructing the that document's centroid vector. We see that the LDA implementation results in overall more coherent summaries, competitive with more computationally complex deep learning models, demonstrating the generality of the centroid-based method, and suggesting the potential for further utilizing topic models to improve upon the general centroid-based method.
+We adapt a recent centroid-based text summarization model [(Rossiello, Semeraro, 2017)](https://www.aclweb.org/anthology/W17-1003.pdf) that takes advantage of the compositionality of word vector embeddings in order to obtain a single vector representation of the most meaningful words in a given text. We propose utilizing Latent Dirichlet Allocation (LDA), a probabilistic generative model for collections of discrete data, as a topic model in order to obtain the most significant words of a document's topic for use in constructing the that document's centroid vector. We see that the LDA implementation results in overall more coherent summaries, competitive with more computationally complex deep learning models - demonstrating the generality of the centroid-based method, and suggesting the potential for further utilizing topic models or other similar probabilistic models to improve upon the general centroid-based method.
 
 ## Acknowledgements
 
-This project is based off of work from the following paper: [(Rossiello, Semeraro, 2017)](https://www.aclweb.org/anthology/W17-1003.pdf), and the repo of their original codebase is available [here](https://github.com/gaetangate/text-summarizer).
+This project is based off of work from the following paper: [(Rossiello, Semeraro, 2017)](https://www.aclweb.org/anthology/W17-1003.pdf), the repo of their original codebase is available [here](https://github.com/gaetangate/text-summarizer).
 
 ## Contributors
 
